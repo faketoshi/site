@@ -1,0 +1,18 @@
+    <section id="contact" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Github</h2>
+                    <p>We're an open-source project. Interested in contributing? Checkout our GitHub!</p>
+                    </p>
+                    <ul class="list-inline banner-social-buttons">
+                        {% for network in site.social %}
+                        <li>
+                            <a href="{{ network.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ network.title }} fa-fw"></i> <span class="network-name">{{ network.title }}</span></a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
